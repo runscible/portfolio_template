@@ -1,0 +1,14 @@
+<  cols="2" rowHeight="2:1">
+  <mat-grid-tile [ngClass]="{'selectedProjects': selectedIndex === 1}" 
+    (mouseenter)="onTipe('projects')" (mouseleave)="offTipe()">
+    <pre>projects</pre>
+  </mat-grid-tile>
+  <mat-grid-tile [ngClass]="{'selectedContact': selectedIndex === 2}" 
+    (mouseenter)="onTipe('contact')" (mouseleave)="offTipe()">
+    <pre>contact</pre>
+  </mat-grid-tile>
+  <mat-grid-tile [ngClass]="{'selectedAbout': selectedIndex === 3}"
+   (mouseenter)="onTipe('about')" (mouseleave)="offTipe()">
+    <pre>about</pre>
+  </mat-grid-tile>
+</mat-grid-list>

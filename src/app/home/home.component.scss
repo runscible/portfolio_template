@@ -1,0 +1,18 @@
+.selectedProjects{
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+}
+.selectedAbout{
+    border-top: solid 1px;
+    border-right: solid 1px;
+}
+.selectedContact{
+    border-left: solid 1px;
+    border-bottom: solid 1px;
+}
+mat-grid-list{
+    pre{
+        font-weight: 800;
+        font-size: 30px;
+    }
+}
