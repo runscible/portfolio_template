@@ -1,14 +1,21 @@
-<  cols="2" rowHeight="2:1">
+<mat-grid-list cols="2" rowHeight="2:1">
   <mat-grid-tile [ngClass]="{'selectedProjects': selectedIndex === 1}" 
-    (mouseenter)="onTipe('projects')" (mouseleave)="offTipe()">
+    (mouseenter)="onTipe('projects')" (mouseleave)="offTipe()"
+    routerLink="projects"  
+    >
     <pre>projects</pre>
   </mat-grid-tile>
   <mat-grid-tile [ngClass]="{'selectedContact': selectedIndex === 2}" 
-    (mouseenter)="onTipe('contact')" (mouseleave)="offTipe()">
+    (mouseenter)="onTipe('contact')" (mouseleave)="offTipe()"
+    routerLink="contact">
     <pre>contact</pre>
   </mat-grid-tile>
   <mat-grid-tile [ngClass]="{'selectedAbout': selectedIndex === 3}"
-   (mouseenter)="onTipe('about')" (mouseleave)="offTipe()">
+   (mouseenter)="onTipe('about')" (mouseleave)="offTipe()"
+   routerLink="about">
     <pre>about</pre>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <router-outlet></router-outlet>
   </mat-grid-tile>
 </mat-grid-list>

@@ -6,30 +6,31 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { TopbarComponent } from './topbar/topbar.component';
 import {MaterialModule} from './material';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes : Routes = [
+  {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'contact', component: ContactComponent}
 ];
-
+  
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     ContactComponent,
     ProjectsComponent,
-    TopbarComponent,
     HomeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    RouterModule.forRoot(routes, {enableTracing: true})
+    RouterModule.forRoot(routes, {enableTracing: true}), 
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
