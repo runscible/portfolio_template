@@ -1,14 +1,11 @@
 .selectedProjects{
-    border-right: solid 1px;
-    border-bottom: solid 1px;
+    background-color: red;
 }
 .selectedAbout{
-    border-top: solid 1px;
-    border-right: solid 1px;
+    background-color: red;
 }
 .selectedContact{
-    border-left: solid 1px;
-    border-bottom: solid 1px;
+    background-color: red;
 }
 mat-grid-list{
     pre{
@@ -17,5 +14,5 @@ mat-grid-list{
     }
 }
 .show-segment{
-    padding-top:30px !important;
+    // padding-top:30px !important;
 }

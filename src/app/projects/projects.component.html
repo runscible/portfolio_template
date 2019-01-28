@@ -1,6 +1,13 @@
-<button mat-button [matMenuTriggerFor]="menu">projects</button>
+<button mat-button [matMenuTriggerFor]="menu">{{projectSelected? projectSelected.name : 'projects'}}</button>
 <mat-menu  #menu="matMenu">
   <div *ngFor="let project of projects">
-    <button mat-button>{{project.name}}</button>
-  </div>  
+    <button mat-button (click)="showProject(project)">{{project.name}}</button>
+  </div>
 </mat-menu>
+<div class="showPrjct" *ngIf="showPrjct">
+  <p>id: {{projectSelected.id}}</p>
+  <p>name: {{projectSelected.name}}</p>
+  <p>clone url: {{projectSelected.clone_url}}</p>
+  <p *ngIf="projectSelected.homepage">homepage: {{ projectSelected.homepage}}</p>
+  <p>language: {{projectSelected.language}}</p>
+</div>

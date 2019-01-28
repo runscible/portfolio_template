@@ -7,6 +7,8 @@ import { ProjectsServiceService } from '../services/projects-service.service';
 })
 export class ProjectsComponent implements OnInit {
   projects : any;
+  showPrjct: boolean;
+  projectSelected: any;
   constructor(public projectsService : ProjectsServiceService) { }
 
   ngOnInit() {
@@ -18,5 +20,9 @@ export class ProjectsComponent implements OnInit {
       this.projects = data;
     })
   }
-
+  showProject(project: string){
+    this.showPrjct = true;
+    this.projectSelected = project;
+    console.log('project', project);
+  }
 }
