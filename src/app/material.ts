@@ -1,16 +1,21 @@
-import {MatChipsModule, MatButtonModule, MatGridListModule} from '@angular/material';
+import {MatChipsModule, 
+        MatButtonModule,
+        MatGridListModule,
+        MatMenuModule} from '@angular/material';
 import {NgModule} from '@angular/core';
 
 @NgModule({
     imports: [
         MatChipsModule,
         MatButtonModule,
-        MatGridListModule
+        MatGridListModule,
+        MatMenuModule
     ],
     exports: [
         MatChipsModule,
         MatButtonModule,
-        MatGridListModule
+        MatGridListModule,
+        MatMenuModule
     ]
 })
 

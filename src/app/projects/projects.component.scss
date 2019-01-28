@@ -1,0 +1,9 @@
+.container-projects{
+    display: flex;
+    align-content: flex-start;
+    .name-project{
+        width: auto;
+        height: 100px;
+        border: solid;
+    }
+}

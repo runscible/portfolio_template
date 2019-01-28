@@ -1,3 +1,6 @@
-<p>
-  {{ projects | json }}
-</p>
+<button mat-button [matMenuTriggerFor]="menu">projects</button>
+<mat-menu  #menu="matMenu">
+  <div *ngFor="let project of projects">
+    <button mat-button>{{project.name}}</button>
+  </div>  
+</mat-menu>
