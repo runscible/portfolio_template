@@ -355,6 +355,10 @@ THE SOFTWARE.
 @angular/animations
 MIT
 
+@angular/material/button
+
+@angular/material/menu
+
 zone.js
 MIT
 The MIT License
